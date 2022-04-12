@@ -1,4 +1,4 @@
-<!-- THIS IS THE USER LOGIN PAGE THIS IS THE HOME PAGE -->
+<!-- Main page of site -->
 <?php
     session_start();
 ?>
@@ -20,17 +20,17 @@
 
         <div class="main_login_card">
 
-            <h3>Please Login</h3>
+            <h3 class="user_admin_login_text">Please Login</h3>
 
             <form action="includes/index.inc.php" method="post" autocomplete="off">
 
                 <div class="txt_field">
-                    <label>Username</label><br>
+                    <label class="index_page_user_pass">Username</label><br>
                     <input type="text" required name="user_name"><br>
                 </div>
                 <br>
                 <div class="txt_field">
-                    <label>Password</label><br>
+                    <label class="index_page_user_pass">Password</label><br>
                     <input type="password" required name="user_password"><br>
                 </div>
                 <br>
@@ -44,7 +44,7 @@
                     <a href="admin_login_page.php">ADMIN</a>
                 </div>
 
-                <!-- ERROR CHECKING FOR INCORECT USERNAME OR PASSWORD -->
+                <!-- Error checking user name and password -->
 
                 <?php
 

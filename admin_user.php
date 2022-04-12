@@ -1,8 +1,8 @@
-<!-- THIS IS THE ADMIN PAGE TO ADD A NEW USER TO THE DATABASE -->
+<!-- Admin page - view - add - remove user accounts -->
 <?php
     session_start();
 
-#### check to make sure user is logged in ####
+#### Session Check ####
 
     if(isset($_SESSION["adminID"])){
     }
@@ -43,7 +43,7 @@
                     <input type="password" required name="new_user_password"><br>
                 </div>
                 <br>
-                <!-- ERROR CHECKING FOR USERNAME IS ALREADY TAKEN -->
+                <!-- Error checking user names -->
 
                 <?php
                     if (isset($_GET["error"])){

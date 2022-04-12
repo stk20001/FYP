@@ -1,6 +1,6 @@
 <?php
 
-/// ADMIN ADD NEW USER TO THE DATABASE ///
+/// Add new general users to the database ///
 
 // If the user did not use the correct 
 // way of arriving to the page. Must have 

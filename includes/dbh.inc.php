@@ -1,5 +1,7 @@
 <?php
 
+### Details for connection to the database ###
+
 $servreName = "localhost";
 $dbUsername = "root";
 $dbPassword = "4321";

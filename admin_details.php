@@ -1,8 +1,8 @@
-<!-- THIS IS THE ADMIN DETAILS PAGE ADD/REMOVE ADMIN FROM THE DATABASE -->
+<!-- Admin page - view - remove - add new admin accounts -->
 <?php
     session_start();
 
-#### check to make sure user is logged in ####
+#### Session check ####
 
     if(isset($_SESSION["adminID"])){
     }
@@ -65,7 +65,7 @@
                     <a href="admin_home_page.php">HOME</a>
                 </div>
 
-                <!-- ERROR CHECKING FOR USERNAME IS ALREADY TAKEN -->
+                <!-- Error checking for account names -->
 
                 <?php
 

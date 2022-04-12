@@ -1,8 +1,8 @@
-<!-- THIS IS THE ADMIN PAGE TO ADD EMAILS -->
+<!-- Admin page to view - add - remove contact emails -->
 <?php
     session_start();
 
-#### check to make sure user is logged in ####
+#### Session check ####
 
     if(isset($_SESSION["adminID"])){
     }
@@ -49,7 +49,8 @@
                     <input type="password" required name="gmail_password"><br>
                 </div>
                 <br>
-                <!-- ERROR CHECKING FOR EMAIL IS ALREADY TAKEN -->
+
+                <!-- Error checking for email details-->
 
                 <?php
                     if (isset($_GET["error"])){
@@ -71,10 +72,11 @@
                 <table border="5" cellpadding="5" class="view_all_emails_table">
                     <tr>
                         <th>Gmail Address</th>
-                        <th>User Email</th>
+                        <th>Client Email</th>
                         <th>Delete Addresses</th>
 
                         <?php
+                    
                     viewAllEmials($conn, $dbName);
                 ?>
 

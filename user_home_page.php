@@ -28,9 +28,6 @@
 
 ?>
 
-<br>
-<br>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,26 +46,29 @@
     <div class="user_home_page_card">
         <div class="main">
 
+            <h1>Front Door Camera</h1>
+
+            <!-- FOR EXTERNAL USE THE WEB ADDRESS NEEDS TO BE CHANGED TO
+                 http://fypthomas.hopto.org:8000/stream.mjpg
+                 http://192.168.192.11:8000/stream.mjpg -->
+
+            <img src="http://192.168.192.11:8000/stream.mjpg" width="340" height="280">
+
             <form class="uhp_b1" action="<?=$_SERVER['PHP_SELF']?>" method="post"><input name="on" type="submit"
                     value="Light On">
                 <form class="uhp_b2" action="<?=$_SERVER['PHP_SELF']?>" method="post"><input name="off" type="submit"
                         value="Light Off"></form>
 
-                <!-- FOR EXTERNAL CONNECTIONS -->
-                <!-- CHANGE ADDRESS TO ftythomas.hopto.org:8000/index.html -->
-                <form>
-                    <button class="uhp_b3" type="button"
-                        onclick="parent.location='http://fypthomas.hopto.org:8000/index.html'">Front Door
-                        Camera</button>
-                </form>
-
-                <form class="uhp_4" onclick="door_check()" action="<?=$_SERVER['PHP_SELF']?>" method="post"><input
+                <form class="uhp_3" onclick="door_check()" action="<?=$_SERVER['PHP_SELF']?>" method="post"><input
                         name="open" type="submit" value="Open Front Door"></form>
 
                 <p><a class="button_logout" href="includes/logout.inc.php">Logout</a></p>
         </div>
     </div>
-   
+
+    <button onclick="displayDate()">The time is?</button>
+    <p id="demo"></p>
+
 </body>
 
 </html>

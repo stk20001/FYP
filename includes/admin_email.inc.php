@@ -1,6 +1,6 @@
 <?php
 
-/// ADMIN ADD NEW EMAILS TO THE DATABASE ///
+/// Admin add emails to the database ///
 
 // If the user did not use the correct 
 // way of arriving to the page. Must have 

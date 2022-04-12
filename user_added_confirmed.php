@@ -1,8 +1,8 @@
-<!-- CONFIRM NEW USER ADDED TO THE DATABASE -->
+<!-- Confirm new general user added to the database -->
 <?php
     session_start();
 
-#### check to make sure user is logged in ####
+#### Session check ####
 
     if(isset($_SESSION["adminID"])){
     }

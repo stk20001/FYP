@@ -10,9 +10,9 @@ from http import server
 
 
 # FOR EXTERNAL USE THE WEB ADDRESS NEEDS TO BE CHANGED TO
-# ftythomas.hopto.org:8000/index.html
+# http://fypthomas.hopto.org:8000/stream.mjpg in user_home_page.php
 
-file = open('camera.php', 'r')
+file = open('user_home_page.php', 'r')
 PAGE= file.read().strip()
 file.close()
 

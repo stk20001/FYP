@@ -1,3 +1,7 @@
+### Script for email alert ###
+### Connection to the gmail account ###
+### and client account ###
+
 import smtplib
 from email.message import EmailMessage
 from email_connection import *

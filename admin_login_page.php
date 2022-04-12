@@ -1,4 +1,4 @@
-<!-- THIS IS THE ADMIN LOGIN PAGE TO THE ADMIN SECTION -->
+<!-- Admin login page -->
 <?php
     session_start();
 ?>
@@ -20,18 +20,18 @@
 
         <div class="admin_login_card">
 
-            <h3>Admin Please Login</h3>
+            <h3 class="user_admin_login_text">Admin Please Login</h3>
 
             <form action="includes/admin_login_page.inc.php" method="post" autocomplete="off">
 
                 <div class="txt_field">
-                    <label>Admin Username</label><br>
+                    <label class="index_page_user_pass">Admin Username</label><br>
                     <input type="text" required name="admin_user_name"><br>
                 </div>
 
                 <br>
                 <div class="txt_field">
-                    <label>Admin Password</label><br>
+                    <label class="index_page_user_pass">Admin Password</label><br>
                     <input type="password" required name="admin_user_password"><br>
                 </div>
 
@@ -45,7 +45,7 @@
                     <a href="index.php">HOME</a>
                 </div>
 
-                <!-- ERROR CHECKING FOR INCORECT USERNAME OR PASSWORD -->
+                <!-- Error checking for wrong input -->
 
                 <?php
 

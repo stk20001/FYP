@@ -17,7 +17,7 @@
         <FORM>
             <center>
                 <!-- 192.168.192.11/user_home_page.php
-                                                                   http://fypthomas.hopto.org/user_home_page.php  -->
+                http://fypthomas.hopto.org/user_home_page.php  -->
 
                 <button style="color:red;" type="button"
                     onclick="parent.location='http://fypthomas.hopto.org/user_home_page.php'">HOME PAGE</button>

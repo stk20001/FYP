@@ -1,6 +1,6 @@
 <?php
 
-/// ADMIN ADD NEW ADMIN TO THE DATABASE ///
+/// Add new admin accounts to the database ///
 
 // If the user did not use the correct 
 // way of arriving to the page. Must have 

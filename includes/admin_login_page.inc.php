@@ -1,6 +1,6 @@
 <?php
 
-/// ADMIN LOGIN ///
+/// Admin login ///
 
 if (isset($_POST["admin_login_button"])){
     

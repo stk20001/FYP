@@ -1,3 +1,5 @@
+### Connection to the database for python code ###
+
 import mariadb
 import sys
 

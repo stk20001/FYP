@@ -1,10 +1,12 @@
+### Shock sensor ###
+
 from ossaudiodev import openmixer
 import RPi.GPIO as GPIO
 from push_alert import *
 from open_door import *
 import time
 
-shock_pin = 40    # define sensor pin
+shock_pin = 40  # define sensor pin
 
 def setup():
         GPIO.setmode(GPIO.BOARD)
@@ -19,9 +21,9 @@ def loop():
                     email_alert("HELLO", "DOOR BELL ALARM", email_address)
 
 def destroy():
-        GPIO.cleanup()            # Release all GPIO
+        GPIO.cleanup()          # Release all GPIO
 
-if __name__ == '__main__':    # Program entrance
+if __name__ == '__main__':      # Program entrance
         setup()
         try:
             loop()

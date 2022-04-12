@@ -1,8 +1,8 @@
-<!-- CONFIRM EMAIL ADDED TO THE DATABASE -->
+<!-- Confirm email added to the database -->
 <?php
     session_start();
 
-#### check to make sure user is logged in ####
+#### Session Check ####
 
     if(isset($_SESSION["adminID"])){
     }

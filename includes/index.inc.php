@@ -1,6 +1,6 @@
 <?php
 
-/// USER LOGIN ///
+/// General user login ///
 
 if (isset($_POST["user_login_button"])){
     

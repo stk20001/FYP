@@ -24,4 +24,4 @@ def email_alert(subject, body, to):
     server.quit()
 
 if __name__ == '__main__':
-    email_alert("HELLO", "DOOR BELL", email_address)
+    email_alert("HELLO", "DOORBELL", email_address)

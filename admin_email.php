@@ -62,6 +62,24 @@
                         }
                     }
 
+                    if (isset($_GET["error"])){
+
+                        if($_GET["error"] == "invalidemail"){
+    
+                            echo "<p>Invalid Email Address.</p>";
+    
+                        }
+                    }
+                    
+                    if (isset($_GET["error"])){
+                        
+                        if($_GET["error"] == "invalidgmail"){
+    
+                            echo "<p>Invalid Gmail Address.</p>";
+    
+                        }
+                    }
+
                     ?>
                 <div class="admin_email">
                     <button type="submit" name="admin_email_button">Add Email Details</button>

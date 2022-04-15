@@ -23,5 +23,5 @@ if __name__ == '__main__':      # Program entrance
     setup()
     try:
        door_unlock()
-    except KeyboardInterrupt:   # Press ctrl-c to end the program FOR TESTING.
+    except KeyboardInterrupt:   # Press ctrl-c to end the program.
         destroy()

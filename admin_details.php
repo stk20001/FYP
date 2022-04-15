@@ -44,6 +44,26 @@
                     <input type="password" required name="new_admin_password"><br>
                 </div>
                 <br>
+                <!-- Error checking for account names -->
+
+                <?php
+
+                    if (isset($_GET["error"])){
+
+                        if($_GET["error"] == "Admin Name Already Exists"){
+
+                            echo "<p>Admin Name Already Exists.</p>";
+
+                        }
+
+                        if($_GET["error"] == "Invalid Username"){
+
+                            echo "<p>Invalid Username.</p>";
+
+                        }
+                    }
+
+                    ?>
                 <div class="add_new_admin_button">
                     <button type="submit" name="add_new_admin_button">Add Admin Details</button>
                 </div>
@@ -64,27 +84,6 @@
                 <div class="go_home_button">
                     <a href="admin_home_page.php">HOME</a>
                 </div>
-
-                <!-- Error checking for account names -->
-
-                <?php
-
-                if (isset($_GET["error"])){
-
-                    if($_GET["error"] == "Admin Name Already Exists"){
-
-                        echo "<p>Admin Name Already Exists.</p>";
-
-                    }
-
-                    if($_GET["error"] == "Invalid Username"){
-
-                        echo "<p>Invalid Username.</p>";
-
-                    }
-                }
-
-                ?>
 
             </form>
 

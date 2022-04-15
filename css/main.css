@@ -46,24 +46,24 @@ body{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 650px;
+    width: 450px;
     height: 500px;
     background: linear-gradient(to right, #2c3e50, #4ca1af);
     border-radius: 10px;
 }
 
-.user_home_page_card{
+.h1_home{
     text-align: center;
+    top: 50%;
+    left: 50%;
+    color: white;
 }
 
-.main {
-    position: absolute;
-    top: 2%;
-    left: 25%;
-    width: 45%;
-    float: center;
-    padding: 5px;
-  }
+.main{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
 
 /* ----------------------------------------------- */
 
